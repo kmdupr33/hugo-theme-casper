@@ -65,7 +65,7 @@
     {{.Hugo.Generator}}
 
     <link rel="canonical" href="{{ .Permalink }}" />
-    {{ partial "analytics.html" .}}
+    {{ partial "analytics.html" . }}
 
     {{ if .Site.Params.customHeaderPartial }}
         {{ partial .Site.Params.customHeaderPartial . }}
