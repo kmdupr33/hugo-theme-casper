@@ -46,6 +46,7 @@
          {{ range .Params.tags }}
           <span class="post-tag small"><a href="{{ $baseurl }}tags/{{ . | urlize }}/">#{{ . }}</a></span>
          {{ end }}
+         <strong>&middot; {{.ReadingTime}} minute read</strong>
         </section>
     </header>
 
@@ -61,7 +62,9 @@
     <figure class="author-image">
         <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
     </figure>
-    {{end}}    
+    {{end}}
+
+    {{ partial "hiring.html" }}
 
     {{ partial "mailchimp.html" . }}
 
