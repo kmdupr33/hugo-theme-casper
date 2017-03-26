@@ -269,14 +269,6 @@ table {
 }
 
 
-/* In order to have correct background when using the monokai pygments style*/
-
-.highlight pre {
-    background-color: inherit;
-    color: #f8f8f2;
-}
-
-
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
 
